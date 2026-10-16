@@ -1,0 +1,17 @@
+node_modules/
+/android/
+.expo/
+dist/
+coverage/
+android/.gradle/
+android/.cxx/
+android/build/
+android/app/build/
+android/app/.cxx/
+android/local.properties
+*.tgz
+route-preparation*.json
+*.log
+*.hprof
+.env
+.env*.local

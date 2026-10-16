@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "AWEAR",
+    "slug": "awear",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/awear-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/awear-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F6F5FB"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.awear.demo",
+      "versionCode": 1,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#4B3FA8",
+        "foregroundImage": "./assets/awear-foreground.png",
+        "monochromeImage": "./assets/awear-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": ["@maplibre/maplibre-react-native", "expo-font"],
+    "experiments": { "reactCompiler": false }
+  }
+}

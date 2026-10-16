@@ -1,0 +1,51 @@
+{
+  "name": "awear",
+  "description": "AWEAR Android air-awareness prototype with a packet-based helmet simulator.",
+  "private": true,
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node --dns-result-order=ipv4first scripts/start.cjs",
+    "android": "expo run:android",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "build:android": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-android.ps1"
+  },
+  "dependencies": {
+    "@maplibre/maplibre-react-native": "11.5.0",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-community/slider": "5.1.2",
+    "@react-navigation/bottom-tabs": "7.21.0",
+    "@react-navigation/native": "7.5.1",
+    "@react-navigation/native-stack": "7.21.0",
+    "expo": "55.0.31",
+    "expo-dev-client": "55.0.40",
+    "expo-font": "55.0.8",
+    "expo-keep-awake": "55.0.8",
+    "expo-splash-screen": "55.0.25",
+    "expo-status-bar": "55.0.6",
+    "expo-system-ui": "55.0.22",
+    "i18next": "26.4.7",
+    "lucide-react-native": "1.58.0",
+    "react": "19.2.0",
+    "react-i18next": "17.0.19",
+    "react-native": "0.83.10",
+    "react-native-reanimated": "4.2.1",
+    "react-native-safe-area-context": "5.6.2",
+    "react-native-screens": "4.23.0",
+    "react-native-svg": "15.15.3",
+    "react-native-worklets": "0.7.4",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@types/geojson": "7946.0.16",
+    "@types/react": "19.2.18",
+    "eslint": "9.39.4",
+    "eslint-config-expo": "55.0.1",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}
